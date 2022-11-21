@@ -906,19 +906,25 @@ a {
 textarea:hover,
 .form-input:hover,
 .form-input:focus {
-    color: #2196f3;
+    color: #212121;
     border-color: #2196f3;
     transition-property: #2196f3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
+.input-wrapper:focus-within > .icon-input {
+    fill: #2196f3;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 textarea:active,
 .form-input:active {
     color: #212121;
     border-color: #2196f3;
-    transition-property: border-color;
+    transition-property: #2196f3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1053,7 +1059,7 @@ textarea {
     height: 15px;
 }
 
- .input-wrapper:hover {
+.input-wrapper:hover {
     fill: #2196f3;
     transition-property: fill;
     transition-duration: 250ms;
