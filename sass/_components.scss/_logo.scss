@@ -1,6 +1,6 @@
 .logo {
     font-family: Raleway;
-    color: #212121;
+    color: $color;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -16,7 +16,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-family: Raleway;
-    color: #ffffff;
+    color: $text-color;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -30,7 +30,7 @@
 .web-logo,
 .web-logo-footer,
 .logo:hover {
-    color: #2196f3;
+    color: $secondary-text-color;
 }
 .section-adress > .logo-footer {
     padding-bottom: 20px;

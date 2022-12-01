@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 587px;
-  background-color: #ffffff;
+  background-color: $primary-bg-color;
 }
 
 .closeModal {
@@ -49,31 +49,32 @@
   border-radius: 50%;
   color: #757575;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: $primary-bg-color;
   cursor: pointer;
-  transition-property: #ffffff;
+  transition-property: $primary-bg-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #ffffff;
-    border: 1px solid #2196f3;
+    background-color: $primary-bg-color;
+    border: 1px solid $primary-border-color;
     fill: #2196f3;
   }
 }
 
 textarea:hover,
+textarea:focus,
 .form-input:hover,
 .form-input:focus {
-  color: #212121;
-  border-color: #2196f3;
-  transition-property: #2196f3;
+  color: $color;
+  border-color: $primary-border-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .input-wrapper:focus-within > .icon-input {
-  fill: #2196f3;
+  fill: $secondary-fill;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,18 +110,18 @@ textarea:hover,
 .input-mail {
   padding: 15px 0 15px 16px;
   width: 358px;
-  background-color: #2f303a;
+  background-color: $third-bg-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 20px;
-  color: #ffffff;
+  color: $text-color;
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    border-color: #2196f3;
-    transition-property: #2196f3;
+    color: $text-color;
+    border-color: $primary-border-color;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
@@ -135,9 +136,9 @@ textarea {
   padding: 12px 16px;
 
   &:active {
-    color: #212121;
-    border-color: #2196f3;
-    transition-property: #2196f3;
+    color: $color;
+    border-color: $primary-border-color;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -156,16 +157,16 @@ textarea {
   display: flex;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid $third-border-color;
   border-radius: 2px;
 }
 .check-line {
   margin: 20px 0;
 }
 .check-line input:checked + .checkbox-agree:before {
-  background-color: #2196f3;
+  background-color: $background-color;
   border: none;
-  background-image: url(../../img/check-mark.svg);
+  background-image: url(/img/check-mark.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition-property: background-color;
@@ -198,7 +199,7 @@ textarea {
 }
 
 .link-agreement {
-  color: #2196f3;
+  color: $secondary-text-color;
   padding-left: 3px;
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
@@ -219,7 +220,7 @@ textarea {
 }
 
 .input-wrapper:hover {
-  fill: #2196f3;
+  fill: $secondary-fill;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -235,8 +236,8 @@ textarea {
 
   &:active {
     color: #212121;
-    border-color: #2196f3;
-    transition-property: #2196f3;
+    border-color: $primary-border-color;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -249,5 +250,5 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $primary-text-color;
 }
