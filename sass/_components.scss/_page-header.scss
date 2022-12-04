@@ -3,19 +3,25 @@
   border: 1px solid $border;
   border-bottom: 1px solid $border;
 }
-.link-item:after {
-  position: relative;
-  content: "";
-  display: block;
-  max-width: 78px;
-  height: 4px;
-  bottom: -32px;
-  padding: 0;
-  background-color: $background-color;
-  border-radius: 2px;
-}
+
 .link-item {
   color: $secondary-text-color;
+  &:after {
+    position: relative;
+    content: "";
+    display: block;
+    max-width: 78px;
+    height: 4px;
+    bottom: -32px;
+    padding: 0;
+    background-color: $background-color;
+    border-radius: 2px;
+  }
+}
+.link-item {
+  .main-nav & {
+    color: $background-color;
+  }
 }
 .main-nav {
   display: flex;
@@ -49,58 +55,59 @@
 }
 .site-nav-list {
   display: flex;
-}
-.site-nav-list .href:last-child {
-  margin-right: 0;
-}
-.site-nav-list {
   margin-left: 93px;
+
+  &.link:hover,
+  &.link:focus {
+    color: $secondary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
-  color: $secondary-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-list .link:active,
-.contacts-nav .link:active {
-  color: red;
+.href:last-child {
+  .site-nav-list & {
+    margin-right: 0;
+  }
 }
 .contacts-nav-list {
   display: flex;
+  margin-left: 318px;
+  &:hover {
+    color: $secondary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.link:active {
+  .contacts-nav-list & {
+    color: $textColor;
+    fill: $fillColor;
+  }
 }
 .contact-nav {
   margin-right: 30px;
-}
-.contact-nav:last-child {
-  margin-right: 0;
-}
-.contacts-nav-list {
-  margin-left: 318px;
-}
-.link-tel {
-  color: $primary-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
+.link-tel,
 .link-mail {
   color: $primary-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link-mail,
 .link-tel {
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: #757575;
-  &:hover, &:focus {
+  &:hover {
     fill: $secondary-fill;
   }
 }

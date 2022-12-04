@@ -10,9 +10,9 @@
 .picture {
   margin-top: 0;
   margin-right: 30px;
-}
-.picture:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .app {
   position: relative;

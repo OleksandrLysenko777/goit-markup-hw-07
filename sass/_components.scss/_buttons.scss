@@ -3,18 +3,16 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $text-color;
+    background-color: $background-color;
+  }
+  &:active {
+    color: greenyellow;
+  }
 }
 
-.button:hover,
-.button:focus {
-  color: $text-color;
-  background-color: $background-color;
-}
-
-.button:active,
-.btn-subscribe:active {
-  color: greenyellow;
-}
 .main-btn {
   background: $background-color;
   color: $text-color;
@@ -35,19 +33,19 @@
   margin-top: 0;
   margin-right: 8px;
   margin-bottom: 34px;
+  &li:last-child {
+    margin-right: 0;
+  }
 }
-.button-list li:last-child {
-  margin-right: 0;
-}
+
 .button-icon {
   width: 44px;
   height: 44px;
   padding: 12px;
   cursor: pointer;
-}
-
-.button-icon:active {
-  fill: $fill-color;
+  &:active {
+    fill: $fill-color;
+  }
 }
 
 .btn-text {
@@ -69,6 +67,9 @@
   min-width: 216px;
   text-align: center;
   border: transparent;
+  &:hover {
+    background-color: $bgColor;
+  }
 }
 .btn-primary {
   background-color: $background-color;
@@ -82,6 +83,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border-color: $primary-border-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .btn-secondary {
@@ -93,21 +100,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-primary:hover,
-.btn-secondary:hover,
-.btn-send:hover {
-  border-color: $primary-border-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.icons:hover,
-.btn-icon:hover {
-  background-color: $background-color;
-  fill: $fill;
-  border-radius: 50%;
+  &:hover {
+    border-color: $primary-border-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .button-icon {
@@ -115,11 +113,11 @@
   height: 44px;
   padding: 12px;
   cursor: pointer;
+  &:active {
+    fill: $fill-color;
+  }
 }
 
-.button-icon:active {
-  fill: $fill-color;
-}
 .btn-icon {
   padding: 0;
   border: none;
@@ -133,6 +131,11 @@
   transition-property: rgba(33, 150, 243, 0.9);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $background-color;
+    fill: $fill;
+    border-radius: 50%;
+  }
 }
 .btn-send {
   font-size: 16px;
@@ -153,6 +156,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 124px;
   margin-right: 124px;
+  &:hover {
+    background-color: $bgColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+  &:focus {
+    color: yellowgreen;
+  }
 }
 .btn-subscribe {
   display: flex;
@@ -176,27 +188,29 @@
   cursor: pointer;
 }
 .btn-subscribe {
-  background-image: url(../img/icon-send.svg);
+  background-image: url(../../img/icon-send.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 83%;
   background-position-y: 65%;
+  &:active {
+    color: greenyellow;
+  }
+  &:hover {
+    color: $text-color;
+    background-color: $third-bg-color;
+  }
 }
-.btn-subscribe:hover {
-  color: $text-color;
-  background-color: #0f60a1;
-}
+
 .button-list {
   display: flex;
-}
-.button-list li {
-  margin-top: 0;
-  margin-right: 8px;
-  margin-bottom: 34px;
-}
-.button-list {
   justify-content: center;
-}
-.button-list li:last-child {
-  margin-right: 0;
+  &li {
+    margin-top: 0;
+    margin-right: 8px;
+    margin-bottom: 34px;
+  }
+  &li:last-child {
+    margin-right: 0;
+  }
 }
