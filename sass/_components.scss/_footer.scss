@@ -29,7 +29,7 @@
   padding-top: 0;
   padding-bottom: 9px;
 }
-.title-social-media {
+.social-media__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -50,7 +50,7 @@
   width: 1218px;
 }
 
-.title-subscribe {
+.form__title-subscribe {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -59,14 +59,14 @@
   color: $text-color;
 }
 
-.form-footer {
+.form__footer {
   margin-top: 10px;
   width: 570px;
   height: 86px;
   margin-left: 93px;
 }
 
-.feedback {
+.form__feedback {
   display: flex;
   margin-top: 20px;
 }

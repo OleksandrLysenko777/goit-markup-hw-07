@@ -1,4 +1,4 @@
-.hero {
+.business {
   display: block;
   background-color: $third-bg-color;
   text-align: center;
@@ -19,10 +19,10 @@
   background-size: cover;
   background-position: center;
 }
-.section-hero {
+.business__section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero-title {
+.business__title {
   color: $text-color;
 }

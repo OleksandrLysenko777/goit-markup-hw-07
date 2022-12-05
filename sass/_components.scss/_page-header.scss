@@ -29,8 +29,8 @@
   justify-content: space-around;
   width: 1218px;
 }
-.site-nav-list,
-.contacts-nav-list {
+.page-header__nav,
+.page-header__contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -38,6 +38,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-mail,
+.link-tel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #757575;
+  &:hover {
+    fill: $secondary-fill;
+  }
 }
 .link-nav,
 .link-mail,
@@ -53,7 +63,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav-list {
+.list-wrap {
   display: flex;
   margin-left: 93px;
 
@@ -65,12 +75,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.href:last-child {
-  .site-nav-list & {
+.list-wrap__href:last-child {
+  .list-wrap & {
     margin-right: 0;
   }
 }
-.contacts-nav-list {
+.page-header__contact {
   display: flex;
   margin-left: 318px;
   &:hover {
@@ -81,7 +91,7 @@
   }
 }
 .link:active {
-  .contacts-nav-list & {
+  .page-header__contact & {
     color: $textColor;
     fill: $fillColor;
   }
@@ -101,13 +111,4 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-mail,
-.link-tel {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: #757575;
-  &:hover {
-    fill: $secondary-fill;
-  }
-}
+

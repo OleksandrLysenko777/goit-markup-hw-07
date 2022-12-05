@@ -1,12 +1,12 @@
 .feature-list {
   display: flex;
 }
-.feature-item::before {
+.feature-list__item::before {
   display: block;
   padding: 0;
   fill: $primary-fill;
 }
-.feature-icon {
+.feature__icon {
   background: $secondary-bg-color;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -21,11 +21,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
-.feature {
+.feature__text {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 30px;
@@ -34,6 +34,6 @@
   letter-spacing: 0.03em;
   font-style: normal;
   &:last-child {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
 }

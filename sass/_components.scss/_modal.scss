@@ -53,7 +53,7 @@
   margin: 40px;
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   &label {
@@ -61,7 +61,7 @@
   }
 }
 input {
-  .form-field & {
+  .form__field & {
     width: 100%;
     margin: 0;
     padding: 12px 0 12px 42px;
@@ -70,7 +70,7 @@ input {
   }
 }
 
-.title-modal {
+.form__title-modal {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -79,7 +79,7 @@ input {
   letter-spacing: 0.03em;
 }
 
-.input-mail {
+.form__input-mail {
   padding: 15px 0 15px 16px;
   width: 358px;
   background-color: $third-bg-color;
@@ -198,7 +198,7 @@ textarea {
   height: 15px;
 }
 
-.input-wrapper {
+.form__input-wrapper {
   position: relative;
   &:hover {
     fill: $secondary-fill;
@@ -223,7 +223,7 @@ textarea {
   }
 }
 
-.form-label {
+.form__label {
   margin-top: 10px;
   margin-bottom: 4px;
   font-weight: 400;

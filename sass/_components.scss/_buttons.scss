@@ -13,7 +13,7 @@
   }
 }
 
-.main-btn {
+.btn__main {
   background: $background-color;
   color: $text-color;
   font-weight: 700;
@@ -26,10 +26,10 @@
   text-align: center;
   border: transparent;
 }
-.button-list {
+.button__list {
   display: flex;
 }
-.button-list li {
+.button__list li {
   margin-top: 0;
   margin-right: 8px;
   margin-bottom: 34px;
@@ -38,7 +38,7 @@
   }
 }
 
-.button-icon {
+.button__icon {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -48,14 +48,14 @@
   }
 }
 
-.btn-text {
+.button__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.main-btn {
+.btn__main {
   background: $background-color;
   color: $text-color;
   font-weight: 700;
@@ -71,7 +71,7 @@
     background-color: $bgColor;
   }
 }
-.btn-primary {
+.button__primary {
   background-color: $background-color;
   color: $text-color;
   padding: 6px 25px;
@@ -91,7 +91,7 @@
   }
 }
 
-.btn-secondary {
+.button__secondary {
   background: $secondary-bg-color;
   border-radius: 4px;
   border: 1px solid $border-color;
@@ -108,7 +108,7 @@
   }
 }
 
-.button-icon {
+.button__icon {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -118,7 +118,7 @@
   }
 }
 
-.btn-icon {
+.btn__icon {
   padding: 0;
   border: none;
   margin-right: 10px;
@@ -137,7 +137,7 @@
     border-radius: 50%;
   }
 }
-.btn-send {
+.btn__send {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -166,7 +166,7 @@
     color: yellowgreen;
   }
 }
-.btn-subscribe {
+.btn__subscribe {
   display: flex;
   position: relative;
   font-size: 16px;
@@ -187,7 +187,7 @@
   align-items: center;
   cursor: pointer;
 }
-.btn-subscribe {
+.btn__subscribe {
   background-image: url(../../img/icon-send.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -202,7 +202,7 @@
   }
 }
 
-.button-list {
+.button__list {
   display: flex;
   justify-content: center;
   &li {

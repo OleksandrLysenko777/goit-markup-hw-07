@@ -1,4 +1,4 @@
-.client-item {
+.client__item {
   width: 170px;
   height: 92px;
   padding: 16px 32px;
@@ -12,9 +12,10 @@
   justify-content: center;
 
   &:last-child {
-  margin-right: 0;}
+    margin-right: 0;
+  }
 }
-.client-flex {
+.client-flex-list__item {
   padding: 0;
   fill: $primary-fill;
   margin-right: 30px;
@@ -35,4 +36,3 @@
     fill: $secondary-fill;
   }
 }
-
